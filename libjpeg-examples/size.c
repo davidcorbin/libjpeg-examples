@@ -1,11 +1,17 @@
 #include <stdio.h>
 #include "jpeglib.h"
 
+/*
+ * Get height of JPEG image
+ */
 int getHeight(struct jpeg_decompress_struct cinfo)
 {
 	return cinfo.image_height;
 }
 
+/*
+* Get height of JPEG image
+*/
 int getWidth(struct jpeg_decompress_struct cinfo) 
 {
 	return cinfo.image_width;
