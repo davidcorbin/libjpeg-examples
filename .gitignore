@@ -210,3 +210,12 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+
+# Visual Studio Solution files
+*.sln
+
+# Visual Studio Project filed
+*.vcxproj
+
+# Visual Studio filter files
+*.filters
