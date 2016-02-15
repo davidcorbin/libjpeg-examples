@@ -2,7 +2,7 @@
 #include "jpeglib.h"
 
 /*
-* Get height of JPEG image
+* Get colorace of JPEG image from header
 */
 int getColorspace(struct jpeg_decompress_struct cinfo)
 {
@@ -44,8 +44,10 @@ int main(void)
 	/* Read JPEG file header */
 	(void)jpeg_read_header(&cinfo, TRUE);
 
+	/* Get colorspace */
 	int colorspace = getColorspace(cinfo);
 
+	/* Print colorspace name based on other int */
 	switch (colorspace) {
 	case 3:
 		printf("Image colorspace is RGB\n");
