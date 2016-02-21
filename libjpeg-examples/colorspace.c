@@ -56,7 +56,11 @@ int main(void)
 	case 1:
 		printf("Image colorspace is grayscale\n");
 		break;
-	}
+
+	default:
+		printf("No colorspace recognized");
+		break;
+	}	
 
 	/* Release memory */
 	jpeg_destroy_decompress(&cinfo);
